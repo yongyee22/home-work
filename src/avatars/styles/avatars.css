@@ -1,0 +1,38 @@
+/* 여기에 스타일을 구현해 주세요 */
+
+.body1 {
+  background-color: #ffffff;
+  border-radius: 25;
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  padding: 100px;
+}
+
+.img_class {
+  * {
+    display: flex;
+    margin: 10px;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+#graycircle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+
+  background-color: #dbdbdb;
+  border-radius: 50%;
+}
+
+#greencircle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+
+  background-color: #4cfe88;
+  border-radius: 50%;
+}
