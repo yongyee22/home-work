@@ -1,38 +1,40 @@
-/* 여기에 스타일을 구현해 주세요 */
-
 .body1 {
   background-color: #ffffff;
-  border-radius: 25;
   border: 1px solid black;
   width: 600px;
   height: 400px;
   padding: 100px;
 }
 
-.img_class {
-  * {
-    display: flex;
-    margin: 10px;
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
-  }
+.img_wrapper {
+  position: relative; /* absolute로 적용된 circle들의 기준이 된다 */
+  display: inline-block; /* 이미지는 인라인 요소이므로, 같은 줄 정렬 및 마진, 패딩, 테두리 적용을 위해*/
+  margin: 10px;
 }
 
-#graycircle {
-  width: 10px;
-  height: 10px;
-  border: 1px solid black;
-
-  background-color: #dbdbdb;
+/* img wrapper클래스에 있는 이미지 들에게 스타일 적용하기 */
+.img_wrapper img {
   border-radius: 50%;
+  width: 64px;
+  height: 64px;
 }
 
-#greencircle {
-  width: 10px;
-  height: 10px;
-  border: 1px solid black;
+.greencircle,
+.graycircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid white;
 
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.greencircle {
   background-color: #4cfe88;
-  border-radius: 50%;
+}
+
+.graycircle {
+  background-color: #dbdbdb;
 }
